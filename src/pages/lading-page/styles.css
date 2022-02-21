@@ -1,0 +1,42 @@
+.header-container {
+  width: 100%;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.list-container {
+  display: flex;
+}
+
+.list-container a {
+  margin-right: 10px;
+  color: #038B43;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.buttons-container {
+  margin-left: 20px;
+}
+
+.buttons-container a {
+  color: #FFFFFF;
+  background: #038B43;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.background-image {
+  width: 100%;
+}
