@@ -1,0 +1,20 @@
+.profile-container {
+  display: flex;
+}
+
+.input-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.input-profile-container span {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #038B43;
+}
+
+.input-profile-container img {
+  margin-bottom: 40px;
+}

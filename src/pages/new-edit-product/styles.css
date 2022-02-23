@@ -1,0 +1,16 @@
+.new-edit-container {
+  display: flex;
+}
+
+.new-edit-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.new-edit-form span {
+  font-size: 24px;
+  color: #038B43;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}

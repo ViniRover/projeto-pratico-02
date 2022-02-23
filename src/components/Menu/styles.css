@@ -1,0 +1,26 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid black;
+}
+
+.menu-container a {
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 20px;
+  color: black;
+}
+
+.menu-container a:hover {
+  text-decoration: underline;
+  color: #038B43;
+}
+
+.menu-container img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}

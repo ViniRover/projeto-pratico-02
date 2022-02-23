@@ -12,13 +12,13 @@ export function CompanyLogin() {
       <div className="company-image"></div>
       <div className="company-form">
         <span className="title-company">Entrar como empresa</span>
-        <div>
+        <form>
           <Input placeholder="E-mail" type="text" icon={MdEmail}/>
           <Input placeholder="Senha" type="password" icon={MdOutlineLock}/>
           <Button label={'Entrar'}/>
-        </div>
+        </form>
         <div className="links-container">
-          <span>Não tem conta? <Link to="/register">Cadastre-se</Link></span>
+          <span>Não tem conta? <Link to="/company-register">Cadastre-se</Link></span>
           <span>Esqueceu a senha? <Link to="/register">Clique aqui</Link></span>
         </div>
       </div>

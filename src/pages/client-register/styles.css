@@ -1,0 +1,54 @@
+.register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-client-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #D5D5D5;
+  padding: 100px;
+}
+
+.register-client-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.input-register-client-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.link-register-client-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.link-register-client-container span {
+  margin-bottom: 5px;
+}
+
+.link-register-client-container button {
+  margin-bottom: 30px;
+}
+
+.link-register-client-container a {
+  text-decoration: none;
+  color: #18A0FB;
+}
+
+.link-register-client-container a:hover {
+  text-decoration: underline;
+}
