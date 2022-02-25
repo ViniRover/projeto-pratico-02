@@ -13,9 +13,19 @@ export function Menu({
 
   useEffect(() => {
     if(isCompany) {
-      setItems(['Produtos','Serviços','Perfil','Compras']);
+      setItems([
+        { name: 'Produtos', link: 'produtos' },
+        { name: 'Serviços', link: 'servicos' },
+        { name: 'Perfil', link: 'perfil' },
+        { name: 'Compras', link: 'compras' },
+      ]);
     } else {
-      setItems(['Produtos','Contratar','Perfil','Carrinho']);
+      setItems([
+        { name: 'Produtos', link: 'produtos' },
+        { name: 'Contratar', link: 'contratar' },
+        { name: 'Perfil', link: 'perfil' },
+        { name: 'Carrinho', link: 'carrinho' }
+      ]);
     }
   }, [isCompany])
 
@@ -24,15 +34,15 @@ export function Menu({
       <img src={Logo} alt="Logo"/>
       {items.map((item, index) => (
         <Link 
-          to={item.toLowerCase()} 
+          to={`/home/${item.link}`} 
           key={index}
           style={{
             color: 
-              window.location.pathname.includes(item.toLowerCase())
+              window.location.pathname.includes(item.link)
                && '#038B43'
           }}
         >
-          {item}
+          {item.name}
         </Link>
       ))}
       <Button label={'Sair'} style={{

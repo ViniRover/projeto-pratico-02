@@ -9,7 +9,7 @@ import './styles.css';
 export function NewEditProduct({
   isEditing
 }) {
-  const [isCompany, setIsCompany] = useState();
+  const [isCompany, setIsCompany] = useState(false);
 
   return(
     <div className="new-edit-container">

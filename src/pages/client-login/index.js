@@ -2,13 +2,19 @@ import { MdEmail, MdOutlineLock } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoApple, IoLogoFacebook } from "react-icons/io5";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 
 import './styles.css';
 
 export function ClientLogin() {
+  const navigate = useNavigate();
+
+  function handleLogin() {
+    navigate('/home/produtos');
+  }
+
   return(
     <div className="container">
       <div className="client-form">
@@ -17,7 +23,7 @@ export function ClientLogin() {
           <form>
             <Input placeholder="E-mail" type="text" icon={MdEmail}/>
             <Input placeholder="Senha" type="password" icon={MdOutlineLock}/>
-            <Button label={'Entrar'}/>
+            <Button label={'Entrar'} onClick={handleLogin}/>
           </form>
           <span className="divider"><span>ou</span></span>
           <div className="login-as">

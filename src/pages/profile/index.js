@@ -16,7 +16,7 @@ import { Button } from '../../components/Button';
 import './styles.css';
 
 export function Profile() {
-  const [isCompany, setIsCompany] = useState(true);
+  const [isCompany, setIsCompany] = useState(false);
 
   return(
     <div className="profile-container">
