@@ -43,6 +43,9 @@
 
 .about-us {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
 }
 
 .partners {
