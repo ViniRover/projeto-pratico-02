@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { Menu } from "./components/Menu";
 import { ClientLogin } from "./pages/client-login";
 import { ClientRegister } from "./pages/client-register";
 import { Company } from "./pages/company";
@@ -7,8 +6,10 @@ import { CompanyLogin } from "./pages/company-login";
 import { CompanyRegister } from "./pages/company-register";
 import { LandingPage } from "./pages/lading-page";
 import { NewEditProduct } from "./pages/new-edit-product";
+import { Products } from "./pages/products";
 import { Profile } from "./pages/profile";
 import { Services } from "./pages/services";
+import { ShopCart } from "./pages/shop-cart";
 
 import './styles/global.css';
 
@@ -23,6 +24,8 @@ function App() {
       <Route path="/home/perfil" element={<Profile />}/>
       <Route path="/home/servicos" element={<Services />}/>
       <Route path="/home/contratar" element={<Company />}/>
+      <Route path="/home/produtos" element={<Products />}/>
+      <Route path="/home/carrinho" element={<ShopCart />}/>
       <Route path="/home/produtos/new" element={<NewEditProduct isEditing={false}/>}/>
       <Route path="/home/produtos/edit" element={<NewEditProduct isEditing={true}/>}/>
     </Routes>

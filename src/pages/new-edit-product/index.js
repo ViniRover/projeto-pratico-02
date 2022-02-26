@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 
@@ -9,7 +10,12 @@ import './styles.css';
 export function NewEditProduct({
   isEditing
 }) {
+  const navigate = useNavigate();
   const [isCompany, setIsCompany] = useState(false);
+
+  function handleCancel() {
+    navigate('/home/produtos');
+  }
 
   return(
     <div className="new-edit-container">
@@ -30,7 +36,9 @@ export function NewEditProduct({
             background: '#FFFFFF',
             color: '#038B43',
             border: '1px solid #038B43'
-          }}/>
+          }}
+            onClick={handleCancel}
+          />
         </div>
       </form>
     </div>

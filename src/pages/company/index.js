@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CompanyCard } from '../../components/CompanyCard';
 import { Menu } from '../../components/Menu';
+
 import './styles.css';
 
 export function Company() {

@@ -1,17 +1,16 @@
-.companies-container {
+.shopcart-container {
   display: flex;
 }
 
-.companies-card {
+.shop-cart-products {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
-.companies-title {
+.shop-cart-title {
   font-size: 24px;
-  margin-bottom: 40px;
   color: #038B43;
+  margin-bottom: 40px;
 }
