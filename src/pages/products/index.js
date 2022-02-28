@@ -10,6 +10,13 @@ export function Products() {
   const navigate = useNavigate();
   const [isCompany, setIsCompany] = useState(false);
 
+  const product = {
+    title: 'Título do produto',
+    company: 'Trash Company',
+    price: '32,00',
+    quantity: 47
+  }
+
   function handleAddProduct() {
     navigate('/home/produtos/new');
   }
@@ -27,8 +34,8 @@ export function Products() {
           <span className="products-title">PRODUTOS</span>
           {isCompany && <Button label={'Adicionar Produto'} onClick={handleAddProduct} />}
         </div>
-        <ProductCard isCompany={isCompany}/>
-        <ProductCard isCompany={isCompany}/>
+        <ProductCard product={product} isCompany={isCompany}/>
+        <ProductCard product={product} isCompany={isCompany}/>
       </div>
     </div>
   );

@@ -4,12 +4,14 @@ import { Input } from '../Input';
 
 import './styles.css';
 
-export function CompanyCard() {
+export function CompanyCard({
+  companyName
+}) {
   return(
     <div className="company-card-container">
       <img src={TestCompany} alt="Test Company"/>
       <div className="company-data">
-        <h3>Nome da empresa</h3>
+        <h3>{companyName}</h3>
         <span>
           Duis aute irure dolor in reprehenderit in voluptate velit 
           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 

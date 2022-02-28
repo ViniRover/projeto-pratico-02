@@ -12,9 +12,15 @@ export function Company() {
       <Menu isCompany={isCompany}/>
       <div className="companies-card">
         <span className="companies-title">EMPRESAS</span>
-        <CompanyCard />
-        <CompanyCard />
-        <CompanyCard />
+        <CompanyCard 
+          companyName={'Nome da empresa'}
+        />
+        <CompanyCard 
+          companyName={'Nome da empresa'}
+        />
+        <CompanyCard 
+          companyName={'Nome da empresa'}
+        />
       </div>
     </div>
   );

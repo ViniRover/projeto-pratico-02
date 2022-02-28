@@ -1,0 +1,20 @@
+.opportunity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  padding: 25px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+  width: 358px;
+  height: 104px;
+  margin: auto;
+}
+
+.opportunity-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunity-title {
+  font-size: 22px;
+}
