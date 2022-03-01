@@ -41,7 +41,7 @@ export function ClientLogin() {
             </button>
           </div>
           <div className="links-container-client">
-            <span>Não tem conta? <Link to="client-register">Cadastre-se</Link></span>
+            <span>Não tem conta? <Link to="/client-register">Cadastre-se</Link></span>
             <span>Esqueceu a senha? <Link to="#">Clique aqui</Link></span>
           </div>
         </div>

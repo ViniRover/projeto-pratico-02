@@ -17,7 +17,6 @@ export function Menu({
         { name: 'Produtos', link: 'produtos' },
         { name: 'Serviços', link: 'servicos' },
         { name: 'Perfil', link: 'perfil' },
-        { name: 'Compras', link: 'compras' },
       ]);
     } else {
       setItems([
