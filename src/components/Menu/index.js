@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import Logo from '../../public/logo.png'
 import { Button } from '../Button';
@@ -9,6 +9,7 @@ import './styles.css';
 export function Menu({
   isCompany
 }) {
+  const navigate = useNavigate();
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -44,10 +45,14 @@ export function Menu({
           {item.name}
         </Link>
       ))}
-      <Button label={'Sair'} style={{
-        borderRadius: 0,
-        marginTop: 'auto',
-      }}/>
+      <Button 
+        label={'Sair'} 
+        style={{
+          borderRadius: 0,
+          marginTop: 'auto',
+        }}
+        onClick={() => navigate(isCompany ? '/company-login' : '/client-login')}
+      />
     </div>
   );
 }
